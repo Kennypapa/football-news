@@ -14,7 +14,7 @@ const Blogs = () => {
     const [backView, setBackView] = useState(false);
     //=== referencing to particular collection in firestore
     const usersCollectionRef = collection(db, "blog");
-
+ 
     const getBlogs = async () => {
         setIsLoading(true);
         const data = await getDocs(usersCollectionRef);
